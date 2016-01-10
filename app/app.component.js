@@ -37,7 +37,7 @@ System.register(['angular2/core', './issue-card/issue-card', './issueservice', '
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n    <h1>Git Issues</h1>\n    <ul>\n      <li *ngFor=\"#issue of issues\">\n        <issue-card [issue]=\"issue\"></issue-card>\n      </li>\n    </ul>\n  ",
+                        template: "\n    <h1>Git Issues</h1>\n    <div class=\"list-group\" *ngFor=\"#issue of issues\">\n        <issue-card [issue]=\"issue\"></issue-card>\n    <div class=\"list-group\">\n  ",
                         styles: ["\n  "],
                         directives: [issue_card_1.IssueCard],
                         providers: [issueservice_1.IssueService]

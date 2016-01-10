@@ -5,10 +5,7 @@ System.register(['rxjs/add/operator/map'], function(exports_1) {
             function (_1) {}],
         execute: function() {
             Issue = (function () {
-                function Issue(html_url, title, body) {
-                    this.html_url = html_url;
-                    this.title = title;
-                    this.body = body;
+                function Issue() {
                 }
                 return Issue;
             })();

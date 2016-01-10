@@ -22,7 +22,7 @@ System.register(['angular2/core'], function(exports_1) {
                 IssueCard = __decorate([
                     core_1.Component({
                         selector: 'issue-card',
-                        template: "\n    <div>\n      <a href=\"{{issue.html_url}}\">{{issue.title}}</a>\n      <p>{{issue.body}}</p>\n    </div>\n  ",
+                        template: "\n  <a href=\"{{issue.html_url}}\" class=\"list-group-item\">\n    <h3 class=\"list-group-item-heading\">{{issue.title}}</h3>\n    <h4 class=\"list-group-item-heading\">State : {{issue.state}}</h4>\n    <p class=\"list-group-item-text\">\n        {{issue.body}}\n     </p>\n  </a>\n  ",
                         inputs: ['issue']
                     }), 
                     __metadata('design:paramtypes', [])

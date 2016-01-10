@@ -8,11 +8,9 @@ import 'rxjs/add/operator/map';
   selector: 'my-app',
   template:`
     <h1>Git Issues</h1>
-    <ul>
-      <li *ngFor="#issue of issues">
+    <div class="list-group" *ngFor="#issue of issues">
         <issue-card [issue]="issue"></issue-card>
-      </li>
-    </ul>
+    <div class="list-group">
   `,
   styles:[`
   `],
